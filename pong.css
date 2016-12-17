@@ -1,0 +1,52 @@
+h2 img {
+    width: 28px;
+    vertical-align: bottom;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+#container {
+    margin: 20px 0 0 200px;
+}
+
+#pong {
+    float: left;
+}
+
+#pong div {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+}
+
+#settings {
+    font-size: 20px;
+    display: none;
+}
+
+#side {
+    margin: 50px 0 0 400px;
+    position: relative;
+    height: 600px;
+}
+
+#stats li {
+    display: block;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+#speedRange {
+    display: block;
+    margin-top: 15px;
+}
+
+#status {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    font-size: 20px;
+}

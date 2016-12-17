@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Neuro Pong</title>
+
+        <script src="neuro.js"></script>
+        <script src="pong.js"></script>
+        <link href="pong.css" rel=stylesheet type="text/css"/>
+    </head>
+    <body>
+        <div id="container">
+            <h2>
+                <a href="https://github.com/zhebrak/neuro_pong/"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/></a>
+                Neuro Pong
+            </h2>
+
+            <div id="pong">
+                <div>Algo<!--: <span id="scoreTop">0</span>--></div>
+                <div id="field"></div>
+                <div>AI<!--: <span id="scoreBottom">0</span>--></div>
+            </div>
+            <div id="side">
+                <ul id="stats">
+                    <li>Epoch: <span id="epoch">1</span></li>
+                    <li>Population: <span id="population"></span></li>
+                    <li>Top AI hits: <span id="ai-hits">0%</span></li>
+                </ul>
+
+                <div id="settings">
+                    <div id="speed">
+                        Speed
+                        <input type="range" id="speedRange">
+                    </div>
+                </div>
+
+                <div id="status">
+                    Training<span id="dots"></span>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
