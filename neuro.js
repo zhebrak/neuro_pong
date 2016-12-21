@@ -22,9 +22,9 @@ function Evolution(options) {
     }
 
     this.options = defaults;
-    for(var i in options){
-		this.options[i] = options[i];
-	}
+    for (var i in options) {
+        this.options[i] = options[i];
+    }
 
     this.generationsCount = 0;
 
@@ -169,6 +169,7 @@ function Generation(options) {
     this.nextGeneration = function() {
         this.genomes.sort(function(a, b) {return b.score - a.score});
         var newGeneration = [];
+
         var eliteCount = Math.round(options.population * options.elitism);
         for (var i = 0; i < eliteCount; i++) {
             newGeneration.push(this.genomes[i]);
@@ -180,7 +181,7 @@ function Generation(options) {
             newGeneration.push(this.genomes[luckyIndex]);
         }
 
-        var randomCount = Math.round(options.population * options.anarchy);
+        var randomCount = Math.round(options.population * options.chaos);
         for (var i = 0; i < randomCount; i++) {
             newGeneration.push(new Genome());
         }
